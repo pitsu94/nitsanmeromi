@@ -3,26 +3,131 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nitsan Meromi | אוטומציה ו-AI לעסקים</title>
+    <title>Nitsan Meromi | ApexFlow Automation</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            dark: '#020617', // כחול עמוק מאוד
+                            teal: '#14b8a6', // טורקיז מודרני
+                            slate: '#1e293b'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Assistant', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+
     <style>
-        /* הוספת פונט נקי למקרה שה-CDN מתעכב */
-        body { font-family: system-ui, -apple-system, sans-serif; }
+        body { background-color: #020617; color: #f1f5f9; }
+        .glass { 
+            background: rgba(255, 255, 255, 0.03); 
+            backdrop-filter: blur(12px); 
+            border: 1px solid rgba(255, 255, 255, 0.1); 
+        }
+        .hero-glow {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100%;
+            height: 600px;
+            background: radial-gradient(circle at 50% 0%, rgba(20, 184, 166, 0.15) 0%, rgba(2, 6, 23, 0) 70%);
+            pointer-events: none;
+            z-index: -1;
+        }
     </style>
 </head>
-<body class="bg-slate-50 text-slate-900">
+<body class="antialiased">
 
-    <section class="bg-blue-900 text-white py-20 px-6 text-center">
-        <div class="max-w-4xl mx-auto">
-            <h1 class="text-4xl md:text-6xl font-bold mb-6">מפסיקים לבזבז זמן על עבודה ידנית</h1>
-            <p class="text-xl mb-8 opacity-90">
-                אנו בונים מערכות אוטומציה אישית, מטמיעים סוכני AI חכמים, ומחברים את כל הכלים העסקיים שלכם למערכת אחת מסונכרנת.
-            </p>
-            <div class="bg-white/10 p-4 rounded-lg inline-block border border-white/20">
-                <p class="font-bold text-cyan-300">בלי קוד, בלי סיבוכים, עם ROI מיידי.</p>
-            </div>
+    <div class="hero-glow"></div>
+
+    <nav class="max-w-6xl mx-auto px-6 py-8 flex justify-between items-center">
+        <div class="text-2xl font-black tracking-tighter text-white">
+            NITSAN<span class="text-brand-teal">MEROMI</span>
+        </div>
+        <a href="#contact" class="glass px-5 py-2 rounded-full text-sm font-bold hover:bg-white/10 transition-all border border-white/20">
+            דברו איתי
+        </a>
+    </nav>
+
+    <section class="max-w-5xl mx-auto px-6 pt-20 pb-32 text-center">
+        <h1 class="text-5xl md:text-7xl font-extrabold text-white mb-8 leading-tight tracking-tight">
+            מפסיקים לבזבז <span class="text-brand-teal italic">זמן וכסף</span> <br>
+            על עבודה ידנית שוחקת
+        </h1>
+        
+        <p class="max-w-3xl mx-auto text-lg md:text-xl text-slate-400 mb-12 leading-relaxed font-light">
+            אני בונה עבורכם פתרון טכנולוגי שתפור בדיוק לצרכי העסק, חוסך לכם אלפי שקלים בהוצאות שוטפות ומעניק לכם שקט נפשי עם ליווי מקצועי, אמין ושקוף לכל אורך הדרך.
+        </p>
+
+        <div class="flex flex-col md:flex-row gap-4 justify-center items-center">
+            <a href="#contact" class="bg-brand-teal hover:bg-teal-400 text-brand-dark font-extrabold py-5 px-10 rounded-2xl text-lg transition-all transform hover:scale-105 shadow-lg shadow-teal-500/20">
+                בואו נבדוק איפה אפשר לחסוך לכם
+            </a>
+        </div>
+
+        <div class="mt-16 flex items-center justify-center gap-2 text-slate-500 text-sm font-bold tracking-widest uppercase">
+            <span class="w-8 h-[1px] bg-slate-800"></span>
+            זה לא מדע טילים, זה פשוט עובד
+            <span class="w-8 h-[1px] bg-slate-800"></span>
         </div>
     </section>
 
-    </body>
+    <section class="max-w-6xl mx-auto px-6 py-12 border-y border-white/5">
+        <div class="flex flex-wrap justify-center gap-12 opacity-50 grayscale hover:grayscale-0 transition-all">
+            <span class="text-xl font-bold">MAKE</span>
+            <span class="text-xl font-bold">AIRTABLE</span>
+            <span class="text-xl font-bold">OPENAI</span>
+            <span class="text-xl font-bold">ZAPIER</span>
+        </div>
+    </section>
+
+    <section class="max-w-6xl mx-auto px-6 py-32 grid md:grid-cols-3 gap-8">
+        <div class="glass p-8 rounded-3xl hover:bg-white/5 transition-colors">
+            <div class="w-12 h-12 bg-brand-teal/20 rounded-xl flex items-center justify-center mb-6 text-brand-teal">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20"/><path d="m4.93 4.93 14.14 14.14"/><path d="M2 12h20"/><path d="m4.93 19.07 14.14-14.14"/></svg>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-4">אוטומציה עסקית</h3>
+            <p class="text-slate-400">חיבור כל המערכות שלכם ליחידה אחת שעובדת 24/7 ללא טעויות אנוש.</p>
+        </div>
+
+        <div class="glass p-8 rounded-3xl hover:bg-white/5 transition-colors">
+            <div class="w-12 h-12 bg-brand-teal/20 rounded-xl flex items-center justify-center mb-6 text-brand-teal">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8V4H8"/><rect width="16" height="12" x="4" y="8" rx="2"/><path d="M2 14h2"/><path d="M20 14h2"/><path d="M15 13v2"/><path d="M9 13v2"/></svg>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-4">סוכני AI אישיים</h3>
+            <p class="text-slate-400">הטמעת בינה מלאכותית שתענה ללקוחות, תנתח נתונים ותחסוך לכם שעות ביום.</p>
+        </div>
+
+        <div class="glass p-8 rounded-3xl hover:bg-white/5 transition-colors">
+            <div class="w-12 h-12 bg-brand-teal/20 rounded-xl flex items-center justify-center mb-6 text-brand-teal">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-4">ניהול נתונים</h3>
+            <p class="text-slate-400">דאשבורדים חכמים שנותנים לכם תמונת מצב מדויקת של העסק בזמן אמת.</p>
+        </div>
+    </section>
+
+    <section id="contact" class="max-w-4xl mx-auto px-6 py-32 text-center">
+        <div class="glass p-12 rounded-[40px] border-brand-teal/20">
+            <h2 class="text-3xl md:text-5xl font-bold text-white mb-6">מוכנים להתייעל?</h2>
+            <p class="text-slate-400 mb-10 text-lg">אל תחכו שהמתחרים שלכם יעברו לאוטומציה קודם. בואו נתחיל היום.</p>
+            <a href="mailto:pitsu94@gmail.com" class="text-brand-teal text-2xl font-bold hover:underline">pitsu94@gmail.com</a>
+        </div>
+    </section>
+
+    <footer class="py-12 text-center text-slate-600 text-sm">
+        &copy; 2026 Nitsan Meromi - ApexFlow Automation. כל הזכויות שמורות.
+    </footer>
+
+</body>
 </html>
