@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>NM - Automation & AI Agency</title>
+    <meta name="description" content="אוטומציה עסקית ופתרונות בינה מלאכותית לעסקים קטנים ובינוניים. חוסכים זמן, מונעים טעויות ומגדילים רווחיות.">
+    
+    <!-- Google Fonts for Hebrew -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Assistant', 'sans-serif'],
+              display: ['Assistant', 'sans-serif'],
+            },
+            colors: {
+              brand: {
+                ink: '#01161E',      // Ink Black - Primary Text / Dark BG
+                teal: '#124559',     // Dark Teal - Primary Action / Headings
+                airforce: '#598392', // Air Force Blue - Secondary / Icons
+                ash: '#AEC3B0',      // Ash Grey - Accents / Light BG
+                beige: '#EFF6E0',    // Lightest - Backgrounds
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        font-family: 'Assistant', sans-serif;
+      }
+      h1, h2, h3, h4, h5, h6 {
+        font-family: 'Assistant', sans-serif;
+      }
+      /* Smooth scrolling */
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0"
+  }
+}
+</script>
+</head>
+  <body class="bg-white text-brand-ink antialiased">
+    <div id="root"></div>
+  </body>
+</html>
