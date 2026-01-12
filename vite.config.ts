@@ -7,8 +7,8 @@ export default defineConfig(({ mode }) => {
     const env = loadEnv(mode, '.', '');
     
     return {
-      // הגדרה קריטית עבור דומיין אישי:
-      // כשהאתר בדומיין משלך, הקישור לקבצים חייב להתחיל מהשורש ('/')
+      // הגדרה קריטית עבור דומיין אישי ב-GitHub Pages
+      // אנו מגדירים '/' כי האתר יושב בשורש הדומיין החדש שלך
       base: '/', 
       
       server: {
@@ -18,7 +18,9 @@ export default defineConfig(({ mode }) => {
       plugins: [react()],
       define: {
         'process.env.API_KEY': JSON.stringify(env.GEMINI_API_KEY),
-        'process.env.GEMINI_API_KEY': JSON.stringify(env.GEMINI_API_KEY)
+        'process.env.GEMINI_API_KEY': JSON.stringify(env.GEMINI_API_KEY),
+        'process.env.VITE_SUPABASE_URL': JSON.stringify(env.VITE_SUPABASE_URL),
+        'process.env.VITE_SUPABASE_ANON_KEY': JSON.stringify(env.VITE_SUPABASE_ANON_KEY)
       },
       resolve: {
         alias: {
