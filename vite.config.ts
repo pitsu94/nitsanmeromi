@@ -2,9 +2,15 @@ import path from 'path';
 import { defineConfig, loadEnv } from 'vite';
 import react from '@vitejs/plugin-react';
 
+// https://vitejs.dev/config/
 export default defineConfig(({ mode }) => {
     const env = loadEnv(mode, '.', '');
+    
     return {
+      // הגדרה קריטית עבור דומיין אישי:
+      // כשהאתר בדומיין משלך, הקישור לקבצים חייב להתחיל מהשורש ('/')
+      base: '/', 
+      
       server: {
         port: 3000,
         host: '0.0.0.0',
